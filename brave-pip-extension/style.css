@@ -1,0 +1,31 @@
+.gx-pip-btn {
+  position: absolute;
+  z-index: 9999999;
+  background: rgba(30, 30, 34, 0.7);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  width: 48px; /* Aumentei um pouquinho para 48px, fica mais fácil de clicar no centro */
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+  /* O segredo da centralização perfeita: */
+  transform: translate(-50%, 0);
+  transition: all 0.2s ease-in-out, top 0.1s ease, left 0.1s ease; /* Transição suave ao mover o mouse */
+  opacity: 0;
+  pointer-events: none;
+}
+
+.gx-pip-btn:hover {
+  background: rgba(250, 82, 82, 0.9);
+  /* Mantém centralizado e aumenta um pouco */
+  transform: translate(-50%, 0) scale(1.1);
+}
+
+.gx-pip-btn svg {
+  width: 24px;
+  height: 24px;
+}

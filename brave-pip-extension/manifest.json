@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Opera GX Style PiP",
+  "version": "1.0",
+  "description": "Botão de Picture-in-Picture flutuante sobre os vídeos, estilo Opera GX.",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["style.css"],
+      "js": ["content.js"]
+    }
+  ]
+}
