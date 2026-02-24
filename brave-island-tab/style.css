@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e24; /* Fundo escuro do menu */
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 300px;
+}
+
+.island-menu {
+  padding: 16px;
+}
+
+#island-title {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #0f0f13;
+  border: 1px solid #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 12px;
+  outline: none;
+}
+
+#island-title:focus {
+  border-color: #9c27b0;
+}
+
+.color-picker {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  justify-content: space-between;
+}
+
+.color-btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform 0.1s;
+}
+
+.color-btn:hover {
+  transform: scale(1.1);
+}
+
+.color-btn.active {
+  border-color: #fff;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.actions button {
+  background: transparent;
+  border: none;
+  color: #ccc;
+  text-align: left;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: background 0.2s;
+}
+
+.actions button span {
+  font-size: 16px;
+  width: 20px;
+  text-align: center;
+}
+
+.actions button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.actions button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.actions .close-btn:hover {
+  background: rgba(250, 82, 82, 0.2);
+  color: #fa5252;
+}

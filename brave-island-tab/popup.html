@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="island-menu">
+    <input type="text" id="island-title" placeholder="Nome da Ilha">
+    
+    <div class="color-picker" id="colors">
+      <div class="color-btn" data-color="orange" style="background: #ff9800;"></div>
+      <div class="color-btn" data-color="yellow" style="background: #ffeb3b;"></div>
+      <div class="color-btn" data-color="grey" style="background: #9e9e9e;"></div>
+      <div class="color-btn" data-color="purple" style="background: #9c27b0;"></div>
+      <div class="color-btn" data-color="blue" style="background: #2196f3;"></div>
+      <div class="color-btn" data-color="cyan" style="background: #00bcd4;"></div>
+      <div class="color-btn" data-color="green" style="background: #4caf50;"></div>
+      <div class="color-btn" data-color="pink" style="background: #e91e63;"></div>
+    </div>
+
+    <div class="actions">
+      <button id="btn-new-tab"><span>+</span> Nova Aba na ilha de abas</button>
+      <button id="btn-save" disabled><span>💾</span> Salvar ilha (Em breve)</button>
+      <button id="btn-close" class="close-btn"><span>✕</span> Fechar ilha de abas</button>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Island Tabs Manager",
+  "version": "1.0",
+  "description": "Gerenciador de Ilhas de Abas estilo Opera GX.",
+  "permissions": [
+    "tabs",
+    "tabGroups"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
